@@ -1,0 +1,19 @@
+{
+  "name": "bp-admin-skin",
+  "version": "0.0.1",
+  "description": "bp admin project  ui skin",
+  "main": "bin/css/theme.css",
+  "scripts": {
+    "build": "lessc src/theme.less bin/css/theme.css"
+  },
+  "keywords": [
+    "less",
+    "theme"
+  ],
+  "author": "fengpeng",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "less": "^2.6.1"
+  }
+}

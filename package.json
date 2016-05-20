@@ -1,10 +1,11 @@
 {
   "name": "bp-admin-skin",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "bp admin project  ui skin",
   "main": "bin/css/theme.css",
   "scripts": {
-    "build": "lessc src/theme.less bin/css/theme.css"
+    "build": "lessc src/theme.less bin/css/theme.css",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "less",

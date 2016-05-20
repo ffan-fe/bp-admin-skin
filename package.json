@@ -1,6 +1,6 @@
 {
   "name": "bp-admin-skin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "bp admin project  ui skin",
   "main": "bin/css/theme.css",
   "scripts": {

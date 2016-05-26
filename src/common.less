@@ -1,48 +1,11 @@
-.module-title{
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
+/**
+ * 公共区, 比如body的背景色 等一些通用(无法归类的)样式都在这里, 如果能归类请尽到各自类型的文件里添加
+ *
+ */
 
+html, body{
+  font-family: @font-family-base;
+}
+ 
+// 表单必填星号的红色
 .required-star{color: red;}
-
-
-//datepicker style
-.uib-datepicker-popup {
-  padding: 0!important;
-  thead {
-    tr {
-      &:first-child {
-        height: 45px!important;
-        background: #32a7f3;
-        color: white;
-        font-size: 18px!important;
-        button {
-          color: white!important;
-        }
-      }
-      &:last-child {
-        height: 35px!important;
-      }
-    }
-
-  }
-  tbody{
-    tr {
-      height: 40px;
-    }
-  }
-  button {
-    border: none !important;
-    background: transparent !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-  }
-  td {
-    min-width: 40px;
-    min-height: 40px;
-    border: 1px solid #e3e5e7;
-    border-collapse: collapse;
-  }
-
-}

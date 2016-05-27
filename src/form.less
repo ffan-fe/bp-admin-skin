@@ -10,3 +10,24 @@
     box-shadow: inset 0 1px 1px @form-element-inset-shadow-color,0 0 8px @form-element-shadow-color;
   }
 }
+.bp-radio {
+  opacity: 0;
+  span {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: " ";
+      border: solid 2px #ddd;
+      border-radius: 30px;
+    }
+  }
+}

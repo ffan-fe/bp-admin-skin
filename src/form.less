@@ -1,0 +1,12 @@
+/**
+ * form
+ */
+
+// 覆盖了一部分bootstrap样式, 主要是颜色
+.form-control{
+  &:focus{
+    border-color: @main-color;
+    outline: 0;
+    box-shadow: inset 0 1px 1px @form-element-inset-shadow-color,0 0 8px @form-element-shadow-color;
+  }
+}

@@ -15,8 +15,11 @@
     .button-container .btn {
       margin: 10px 10px;
     }
-    .radio-container label {
-      margin-right: 10px;
+    .dropdown-menu {
+      display: block;
+      position: relative;
+      float: none;
+      width: 160px;
     }
   </style>
 </head>
@@ -59,22 +62,60 @@
                 <label class="control-label"><span class="required-star">*</span>龙破斩的咒文:</label>
                 <input type="text" class="form-control" />
               </div>
-              <div class="form-group">
-                <label class="control-label col-sm-2"><span class="required-star">*</span>radio:</label>
-                <div class="col-ms-10 radio-container">
+              
+              <!--复选框按钮为绿色，约定太多，请勿使用，不慎使用，不喜勿喷 ^v^ ~~-->
+              <!--<div class="form-group">
+                <div class="col-ms-10 radio">
                   <label for="radio1">
                     <input type="radio" id="radio1" name="bp-radio" class="bp-radio">
-                    <span></span>
-                  </label>
-                  <label for="radio2">
-                    <input type="radio" id="radio2" name="bp-radio" class="bp-radio">
-                    <span></span>
-                  </label>
-                  <label for="radio3">
-                    <input type="radio" id="radio3" name="bp-radio" class="bp-radio">
-                    <span></span>
+                    <span class="bp-radio-span"></span>
+                    Option one is this and that&mdash;be sure to include why it's great
                   </label>
                 </div>
+                <div class="col-ms-10 radio">
+                  <label for="radio2">
+                    <input type="radio" id="radio2" name="bp-radio" class="bp-radio">
+                    <span class="bp-radio-span"></span>
+                    Option one is this and that&mdash;be sure to include why it's great
+                  </label>
+                </div>
+                <div class="col-ms-10 radio">
+                  <label for="radio3">
+                    <input type="radio" id="radio3" name="bp-radio" class="bp-radio">
+                    <span class="bp-radio-span"></span>
+                    Option one is this and that&mdash;be sure to include why it's great
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-1"><span class="required-star">*</span>radio:</label>
+                <div class="col-ms-10 radio">
+                  <label for="radio4">
+                    <input type="radio" id="radio4" name="bp-radio1" class="bp-radio">
+                    <span class="bp-radio-span"></span>
+                    Option one
+                  </label>
+                  <label for="radio5">
+                    <input type="radio" id="radio5" name="bp-radio1" class="bp-radio">
+                    <span class="bp-radio-span"></span>
+                    Option two
+                  </label>
+                  <label for="radio6">
+                    <input type="radio" id="radio6" name="bp-radio1" class="bp-radio">
+                    <span class="bp-radio-span"></span>
+                    Option three
+                  </label>
+                </div>
+              </div>-->
+              <div class="form-group">
+                <label for="control-label"><span class="required-star">*</span>Dropdown:</label>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
               </div>
             </form>
           </div>

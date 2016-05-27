@@ -1,7 +1,8 @@
 /**
  * form
+ * @author liuchang fengpeng
  */
-
+ 
 // 覆盖了一部分bootstrap样式, 主要是颜色
 .form-control{
   &:focus{
@@ -10,43 +11,9 @@
     box-shadow: inset 0 1px 1px @form-element-inset-shadow-color,0 0 8px @form-element-shadow-color;
   }
 }
-
-// 复选框按钮为绿色，约定太多，请勿使用，不慎使用，不喜勿喷 ^v^ ~~
-// .radio {
-//   label {
-//     position: relative;
-//     padding-left: 0px;
-//     .bp-radio {
-//       opacity: 0;
-//       position: absolute;
-//       top: 0px;
-//       left: 41px;
-//     }
-//     .bp-radio-span {
-//       cursor: pointer;
-//       position: relative;
-//       display: inline-block;
-//       height: 15px;
-//       width: 15px;
-//       vertical-align: middle;
-//       &:before {
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         right: 0;
-//         bottom: 0;
-//         content: " ";
-//         border: solid 2px #ddd;
-//         border-radius: 30px;
-//       }
-//     }
-//     .bp-radio:checked + .bp-radio-span:before {
-//       height: 15px;
-//       width: 15px;
-//       background: #06c5ac;
-//       border-color: #ddd;
-//     }
-//   }
-// }
-
-
+select.form-control{
+  option:hover {
+      color: white;
+      background-color: @primary-color;
+  }
+}

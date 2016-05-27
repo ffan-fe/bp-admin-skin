@@ -1,10 +1,23 @@
 /**
  * 同Bootstarp variables.less, 变量之集中营, 主题变幻之基
+ * @author fengpeng liuchang
  */
 
 // 主色调, 按钮, panel的头, 一些文字都用这个颜色
-@primary-color:                 #06c5ac;
-@danger-color:                  #d57d6d;
+@primary-color:                   #06c5ac;
+@danger-color:                    #d57d6d;
+// 主容器, 乃侧边栏右边的容器, 此处定义他的背景色
+@main-content-container-bg-color: #EEEEEE;
+@main-content-container-padding:    15px;
+// 基础容器, 就是不想用Panel的时候又需要有个包裹的时候用
+@basic-container-padding:           20px;
+@basic-container-bg-color:        white;
+@basic-container-border-color:    #DDDDDD;
+@basic-container-border-radius:     5px;
+@basic-container-margin-bottom:     20px;
+@basic-container-shadow-color:    rgba(0,0,0,0.05);
+// Font
+@font-family-base: 'PingFang SC', "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // 按钮的颜色配置
 @btn-default-font-color: #333333;
@@ -23,36 +36,26 @@
 @btn-danger-hover-border-color: #b74935;
 @btn-danger-hover-bg-color: #ca5a45;
 
-// 主容器, 乃侧边栏右边的容器, 此处定义他的背景色
-@main-content-container-bg-color: #EEEEEE;
- 
-// Font
-@font-family-base: 'PingFang SC', "Helvetica Neue", Helvetica, Arial, sans-serif;
+// panel
+@panel-border-radius:                       @basic-container-border-radius;
+@panel-bg-color:                          #FFF;
+@panel-header-text-color:                 #FFF;
+@panel-header-title-weight:                 300;
+@panel-heading-border-top-right-radius:     4px;
+@panel-heading-border-top-left-radius:      4px;
+@panel-padding:                             @basic-container-padding;
+@panel-header-bg-color:                     @primary-color;
+@panel-footer-bg-color:                     @panel-bg-color;
 
-// ============== panel ==============
+// table
+@ffan-table-bg-accent:              #f4f6f9;
 
-@panel-bg-color:            #FFF;
-@panel-header-bg-color:     @primary-color;
-@panel-header-text-color:   #FFF;
-@panel-header-title-weight: 300;
-@panel-padding: 20px;
-
-// ============== panel end ==============
-
-// ============== table ===============
-
-@ffan-table-bg-accent:               #f4f6f9;
-
-// ============== table end ===============
-
-// ============== form ===============
-
+// form
 // 内阴影
-@form-element-inset-shadow-color: rgba(0,0,0,.075);
+@form-element-inset-shadow-color:   rgba(0,0,0,.075);
 // 外阴影
-@form-element-shadow-color: rgba(6,197,172,0.6);
-// ============== form end ===============
+@form-element-shadow-color:         rgba(6,197,172,0.6);
 
-// ============== modal ==================
-@modal-header-bg-color: @primary-color;
-@modal-header-color: #FFF;
+// modal
+@modal-header-bg-color:               @primary-color;
+@modal-header-color:                #FFF;

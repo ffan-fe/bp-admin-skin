@@ -35,20 +35,20 @@
           </div>
         </div>
         <div class="conter-wrapper">
-          <div class="button-container">
-            <div>
+          <div class="bp-container">
+            <div class="form-group">
               <span>实例:</span>
               <button type="button" class="btn bp-btn-default">（默认）default</button>
               <button type="button" class="btn bp-btn-primary">（确定）primary</button>
               <button type="button" class="btn bp-btn-danger">（取消）danger</button>
             </div>
-            <div>
+            <div class="form-group">
               <span>置灰:</span>
               <button type="button" class="btn bp-btn-default" disabled>（默认尺寸）Default button</button>
               <button type="button" class="btn bp-btn-primary" disabled>（默认尺寸）Default button</button>
               <button type="button" class="btn bp-btn-danger" disabled>（默认尺寸）Default button</button>       
             </div>
-            <div>
+            <div class="form-group">
               <span>大小:</span>
               <button type="button" class="btn bp-btn-primary btn-lg">（大按钮）Large button</button>
               <button type="button" class="btn bp-btn-primary">（默认尺寸）Default button</button>
@@ -56,7 +56,8 @@
               <button type="button" class="btn bp-btn-primary btn-xs">（超小尺寸）Extra small button</button>
             </div>
           </div>
-          <div style="background-color: #FFF; padding:10px; margin-top: 10px; margin-bottom:10px;">
+          <div class="bp-container">
+            <p>我是bp-container</p>
             <form action="">
               <div class="form-group">
                 <label class="control-label"><span class="required-star">*</span>龙破斩的咒文:</label>
@@ -117,13 +118,58 @@
                   <li><a href="#">Separated link</a></li>
                 </ul>
               </div>
+              <div class="form-group">
+                <select multiple class="form-control">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
             </form>
           </div>
           <div class="panel bp-panel-primary">
             <div class="panel-heading">
-              <div class="panel-title">我是title</div>
+              <div class="panel-title">通常的Panel</div>
             </div>
             <div class="panel-body">123</div>
+          </div>
+           <div class="panel bp-panel-danger">
+            <div class="panel-heading">
+              <div class="panel-title">危险的Panel</div>
+            </div>
+            <div class="panel-body">123</div>
+            <div class="panel-footer">
+              <button type="button" class="btn bp-btn-default">（默认）default</button>
+              <button type="button" class="btn bp-btn-primary">（确定）primary</button>
+            </div>
+          </div>
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">Modal Title</h3>
+              </div>
+              <div class="modal-body">
+                <div> This is a modal body </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn bp-btn-default">（默认）default</button>
+                <button type="button" class="btn bp-btn-primary">（确定）primary</button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">弹窗啊都是弹</h3>
+              </div>
+              <div class="modal-body">
+                <div> This is a modal body </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn bp-btn-primary">（确定）primary</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

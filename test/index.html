@@ -4,6 +4,18 @@
   <meta charset="UTF-8">
   <title>Skin Perview</title>
   <link href="../bin/css/theme.css" rel="stylesheet">
+  <style>
+    /**
+    * 按钮容器
+    */
+    .button-container {
+      padding-left: 10px;
+      background: #fff;
+    }
+    .button-container .btn {
+      margin: 10px 10px;
+    }
+  </style>
 </head>
 <body>
   <div class="app">
@@ -16,35 +28,38 @@
             <p class="subtitle">是个前所未有的萝莉控</p>
           </div>
         </div>
-        <div class="button">
-          <div>
-            <span>实例:</span>
-            <button type="button" class="btn bp-btn-default">（默认）default</button>
-            <button type="button" class="btn bp-btn-primary">（确定）primary</button>
-            <button type="button" class="btn bp-btn-danger">（取消）danger</button>
-          </div>
-          <div>
-            <span>置灰:</span>
-            <button type="button" class="btn bp-btn-default" disabled>（默认尺寸）Default button</button>
-            <button type="button" class="btn bp-btn-primary" disabled>（默认尺寸）Default button</button>
-            <button type="button" class="btn bp-btn-danger" disabled>（默认尺寸）Default button</button>       
-          </div>
-          <div>
-            <span>大小:</span>
-            <button type="button" class="btn bp-btn-primary btn-lg">（大按钮）Large button</button>
-            <button type="button" class="btn bp-btn-primary">（默认尺寸）Default button</button>
-            <button type="button" class="btn bp-btn-primary btn-sm">（小按钮）Small button</button>
-            <button type="button" class="btn bp-btn-primary btn-xs">（超小尺寸）Extra small button</button>
-          </div>
-        </div>
         <div class="conter-wrapper">
-          <div style="background-color: #FFF; padding:10px;">
+          <div class="button-container">
+            <div>
+              <span>实例:</span>
+              <button type="button" class="btn bp-btn-default">（默认）default</button>
+              <button type="button" class="btn bp-btn-primary">（确定）primary</button>
+              <button type="button" class="btn bp-btn-danger">（取消）danger</button>
+            </div>
+            <div>
+              <span>置灰:</span>
+              <button type="button" class="btn bp-btn-default" disabled>（默认尺寸）Default button</button>
+              <button type="button" class="btn bp-btn-primary" disabled>（默认尺寸）Default button</button>
+              <button type="button" class="btn bp-btn-danger" disabled>（默认尺寸）Default button</button>       
+            </div>
+            <div>
+              <span>大小:</span>
+              <button type="button" class="btn bp-btn-primary btn-lg">（大按钮）Large button</button>
+              <button type="button" class="btn bp-btn-primary">（默认尺寸）Default button</button>
+              <button type="button" class="btn bp-btn-primary btn-sm">（小按钮）Small button</button>
+              <button type="button" class="btn bp-btn-primary btn-xs">（超小尺寸）Extra small button</button>
+            </div>
+          </div>
+          <div style="background-color: #FFF; padding:10px; margin-top: 10px; margin-bottom:10px;">
             <form action="">
               <div class="form-group">
                 <label class="control-label"><span class="required-star">*</span>龙破斩的咒文:</label>
                 <input type="text" class="form-control" />
               </div>
             </form>
+          </div>
+          <div class="panel panel-default">
+            123
           </div>
         </div>
       </div>

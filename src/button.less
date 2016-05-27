@@ -1,61 +1,81 @@
-.bp-default-btn{
-  .btn-default();
+/**
+ * 按钮容器
+ */
+.button {
+  padding-left: 10px;
+  background: #fff;
+  .btn {
+    margin: 10px 10px;
+  }
 }
-
-.ffan-btn-blue {
-  background: #32a7f3 !important;
+/**
+ * 按钮默认样式
+ */
+.bp-btn-default {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
   &:hover {
-    background: #2d9ae1 !important;
-  }
-  &:active {
-    background: #0f85d2 !important;
+    color: #333333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
   }
 }
-
-.ffan-btn-green {
-  background: #00c9b8 !important;
+.bp-btn-default[disabled] {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
   &:hover {
-    background: #01b2a3 !important;
-  }
-  &:active {
-    background: #039b81 !important;
+    color: #333333;
+    background-color: #ffffff;
+    border-color: #cccccc;
   }
 }
-
-.ffan-btn-orange {
-  background: #ff7430 !important;
+/**
+ * 祖母绿的按钮
+ */
+.bp-btn-primary {
+  color: #ffffff;
+  background-color: #06c5ac;
+  border-color: #06c5ac;
   &:hover {
-    background: #ff7430 !important;
-  }
-  &:active {
-    background: #e35611 !important;
+    color: #ffffff;
+    background-color: #049481;
+    border-color: #037163;
   }
 }
-
-.ffan-btn-grey {
-  background: #e8ecf1 !important;
+.bp-btn-primary[disabled] {
+  color: #ffffff;
+  background-color: #06c5ac;
+  border-color: #05ac96;
   &:hover {
-    background: #d9e3ed !important;
-  }
-  &:active {
-    background: #cddae7 !important;
-  }
-}
-
-//form 样式
-.ffan-form-control {
-  border-radius: 0 !important;
-  border-color: #e3e5e7 !important;
-  &:focus {
-    border-color: #32a7f3 !important;
+    color: #ffffff;
+    background-color: #06c5ac;
+    border-color: #05ac96;
   }
 }
-
-.ffan-form-control-input {
-  height: 36px !important;
-  border-radius: 0 !important;
-  border-color: #e3e5e7 !important;
-  &:focus {
-    border-color: #32a7f3 !important;
+/**
+ * 红色的按钮
+ */
+.bp-btn-danger {
+  color: #ffffff;
+  background-color: #d57d6d;
+  border-color: #d57d6d;
+  &:hover {
+    color: #ffffff;
+    background-color: #ca5a45;
+    border-color: #b74935;
   }
 }
+.bp-btn-danger[disabled] {
+  color: #ffffff;
+  background-color: #d57d6d;
+  border-color: #cf6b59;
+  &:hover {
+    color: #ffffff;
+    background-color: #d57d6d;
+    border-color: #cf6b59;
+  }
+}
+  
+  

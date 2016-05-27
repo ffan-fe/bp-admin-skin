@@ -4,13 +4,30 @@
  */
  
 .panel {
-  .bp-panel-primary {
-    border-color: @primary-color;
+  border: none;
+  border-radius: 5px;
+  &.bp-panel-primary {
+    border-color: @panel-header-bg-color;
     .panel-heading {
-      color: #ffffff;
+      color: @panel-header-text-color;
+      padding: @panel-padding;
       background-color: @primary-color;
       border-color: @primary-color;
-      .panel-title{}
+      border-bottom: none;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+      .panel-title{
+        font-weight: @panel-header-title-weight;
+      }
+    }
+    .panel-body{
+      padding: @panel-padding;
+    }
+  }
+  &.bp-panel-danger {
+    .bp-panel-primary();
+    .panel-heading {
+      background-color: @danger-color;
     }
   }
 }

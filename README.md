@@ -1,9 +1,9 @@
-#样式说明文档
+# 样式说明文档
 ---
 
 [TOC]
 
-##1. 页头 
+## 1. 页头 
 
 - `page-title`
  
@@ -18,9 +18,9 @@
 </div>
 ```
 
-##2. 按钮
+## 2. 按钮
 
-###1. 按钮样式
+### 1. 按钮样式
  
  - `bp-btn-default` 默认样式（重置、取消...）
  - `bp-btn-primary` 确定、提交、查询...
@@ -46,7 +46,7 @@
 <button type="button" class="btn bp-btn-danger" disabled>删除</button>  
 ```
 
-###3. 按钮尺寸
+### 3. 按钮尺寸
 
 - `btn-lg` 大按钮
 - `btn-sm` 小按钮
@@ -61,7 +61,7 @@
 <button type="button" class="btn bp-btn-primary btn-xs">（超小尺寸）Extra small button</button>
 ```
 
-##3. 无标题容器 
+## 3. 无标题容器 
 
 - `bp-container`
 
@@ -73,11 +73,11 @@
 </div>
 ```
 
-##4. 有标题容器 
+## 4. 有标题容器 
 
 - `panel`
 
-###1. 标题背景色
+### 1. 标题背景色
 
 - `bp-panel-primary` 标题背景色为**祖母绿**的容器
 - `bp-panel-danger` 标题背景色为**红色**的容器
@@ -97,7 +97,7 @@
 </div>
 ```
 
-###2. 按钮位置
+### 2. 按钮位置
 
 - 默认 局左
 - `panel-footer-btn-right` 局右
@@ -117,7 +117,7 @@
 </div>
 ```
 
-##5. 表格
+## 5. 表格
 
 - `table` `table-condensed` `table-bordered` `table-striped` `table-hover`
 
@@ -128,7 +128,7 @@
 </table>
 ```
 
-##6. 表单
+## 6. 表单
 
 - `form-control` 边框色为**祖母绿**
 - `required-star` 必填项提示**红***
@@ -142,7 +142,7 @@
 </div>
 ```
 
-##7. 弹窗
+## 7. 弹窗
 
 - `modal-dialog` 弹窗容器
 
@@ -164,4 +164,3 @@
   </div>
 </div>
 ```
-          

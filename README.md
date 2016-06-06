@@ -80,7 +80,7 @@
 
 ### 1. 标题背景色
 
-- `bp-panel-primary` 标题背景色为**祖母绿**的容器
+- `bp-panel-primary` 标题背景色为**蓝色**的容器
 - `bp-panel-danger` 标题背景色为**红色**的容器
 
 示例：
@@ -131,8 +131,9 @@
 
 ## 6. 表单
 
-- `form-control` 边框色为**祖母绿**
+- `form-control` 边框色为**蓝色**
 - `required-star` 必填项提示**红***
+- `input-padding-left` 并排排列时，减小间距，去除padding-left
 
 示例：
 
@@ -142,6 +143,15 @@
   <input type="text" class="form-control" />
 </div>
 ```
+
+```
+<div class="col-md-12">
+  <label class="col-md-4 control-label">优惠券ID:</label>
+  <div class="col-md-8 input-padding-left">
+    <input type="text" class="form-control" placeholder="请输入优惠券ID" />
+  </div>
+</div>
+```    
 
 ## 7. 弹窗
 

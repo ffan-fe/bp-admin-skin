@@ -5,9 +5,22 @@
   .modal-content{
     border: 1px solid rgba(0,0,0,0.2);
     .modal-header{
+      padding: 10px;
       background-color: @modal-header-bg-color;
       color: @modal-header-color;
       border-radius: 5px 5px 0 0;
+      .modal-title {
+        font-size: 16px;
+      }
+      .modal-close {
+        float: right;
+        font-size: 16px;
+        font-weight: 200;
+        cursor: pointer;
+      }
     }
+  }
+  .modal-footer {
+    text-align: center;
   }
 }

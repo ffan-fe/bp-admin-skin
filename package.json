@@ -1,7 +1,7 @@
 {
   "name": "bp-admin-skin",
-  "version": "0.0.7",
-  "description": "bp admin project  ui skin",
+  "version": "1.0.0",
+  "description": "bp admin project ui skin",
   "main": "bin/css/theme.css",
   "scripts": {
     "build": "lessc src/theme.less bin/css/theme.css",

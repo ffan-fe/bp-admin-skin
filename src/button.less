@@ -28,21 +28,21 @@
 .bp-btn-primary {
   color: @btn-font-color;
   background-color: @btn-primary-color;
-  border-color: @btn-primary-color;
+  // border-color: @btn-primary-color;
   &:hover {
     color: @btn-font-color;
     background-color: @btn-primary-hover-bg-color;
-    border-color: @btn-primary-hover-border-color;
+    // border-color: @btn-primary-hover-border-color;
   }
 }
 .bp-btn-primary[disabled] {
   color: @btn-font-color;
   background-color: @btn-primary-color;
-  border-color: @btn-primary-disabled-border-color;
+  // border-color: @btn-primary-disabled-border-color;
   &:hover {
     color: @btn-font-color;
     background-color: @btn-primary-color;
-    border-color: @btn-primary-disabled-border-color;
+    // border-color: @btn-primary-disabled-border-color;
   }
 }
 /**
@@ -51,21 +51,24 @@
 .bp-btn-danger {
   color: @btn-font-color;
   background-color: @btn-danger-color;
-  border-color: @btn-danger-color;
+  // border-color: @btn-danger-color;
   &:hover {
     color: @btn-font-color;
     background-color: @btn-danger-hover-bg-color;
-    border-color: @btn-danger-hover-border-color;
+    // border-color: @btn-danger-hover-border-color;
+  }
+  &:focus {
+    outline: 5px auto @btn-danger-color;
   }
 }
 .bp-btn-danger[disabled] {
   color: @btn-font-color;
   background-color: @btn-danger-color;
-  border-color: @btn-danger-disabled-border-color;
+  // border-color: @btn-danger-disabled-border-color;
   &:hover {
     color: @btn-font-color;
     background-color: @btn-danger-color;
-    border-color: @btn-danger-disabled-border-color;
+    // border-color: @btn-danger-disabled-border-color;
   }
 }
   

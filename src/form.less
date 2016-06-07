@@ -11,9 +11,20 @@
     box-shadow: inset 0 1px 1px @form-element-inset-shadow-color,0 0 8px @form-element-shadow-color;
   }
 }
+
 select.form-control{
   option:hover {
-      color: white;
+      color: @form-select-hover-font-color;
       background-color: @primary-color;
+  }
+}
+
+.input-padding-left {
+  padding-left: 0px;
+}
+
+.form-horizontal {
+  .control-label.date-font-center {
+    text-align: center;
   }
 }

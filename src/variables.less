@@ -4,7 +4,7 @@
  */
 
 // 主色调, 按钮, panel的头, 一些文字都用这个颜色
-@primary-color:                   #06c5ac;
+@primary-color:                   #58b4e9;
 @danger-color:                    #d57d6d;
 // 主容器, 乃侧边栏右边的容器, 此处定义他的背景色
 @main-content-container-bg-color: #EEEEEE;
@@ -14,27 +14,27 @@
 @basic-container-bg-color:        white;
 @basic-container-border-color:    #DDDDDD;
 @basic-container-border-radius:     5px;
-@basic-container-margin-bottom:     20px;
+@basic-container-margin-bottom:     15px;
 @basic-container-shadow-color:    rgba(0,0,0,0.05);
 // Font
 @font-family-base: 'PingFang SC', "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // 按钮的颜色配置
-@btn-default-font-color: #333333;
-@btn-default-border-color: #cccccc;
-@btn-default-hover-border-color: #adadad;
-@btn-default-hover-bg-color: #e6e6e6;
+@btn-default-font-color:          #333333;
+@btn-default-border-color:        #cccccc;
+@btn-default-hover-border-color:  #adadad;
+@btn-default-hover-bg-color:      #e6e6e6;
 
-@btn-font-color: #ffffff;
-@btn-primary-color: @primary-color;
-@btn-primary-disabled-border-color: #05ac96;
-@btn-primary-hover-border-color: #037163;
-@btn-primary-hover-bg-color: #049481;
+@btn-font-color:                  #ffffff;
+@btn-primary-color:                 @primary-color;
+// @btn-primary-disabled-border-color: #05ac96;
+// @btn-primary-hover-border-color: #037163;
+@btn-primary-hover-bg-color:      #128ad0;
 
-@btn-danger-color: @danger-color;
-@btn-danger-disabled-border-color: #cf6b59;
-@btn-danger-hover-border-color: #b74935;
-@btn-danger-hover-bg-color: #ca5a45;
+@btn-danger-color:                  @danger-color;
+// @btn-danger-disabled-border-color: #cf6b59;
+// @btn-danger-hover-border-color: #b74935;
+@btn-danger-hover-bg-color:       #ca5a45;
 
 // panel
 @panel-border-radius:                       @basic-container-border-radius;
@@ -48,14 +48,33 @@
 @panel-footer-bg-color:                     @panel-bg-color;
 
 // table
-@ffan-table-bg-accent:              #f4f6f9;
+// @ffan-table-bg-accent:              #f4f6f9;
+@table-hover-bg-color:              #f1f1f1;
 
 // form
 // 内阴影
 @form-element-inset-shadow-color:   rgba(0,0,0,.075);
 // 外阴影
-@form-element-shadow-color:         rgba(6,197,172,0.6);
+@form-element-shadow-color:           @primary-color;
+// 星号颜色
+@form-required-star-color:          red;
+// select hover 字体颜色
+@form-select-hover-font-color:      #FFF;
 
 // modal
 @modal-header-bg-color:               @primary-color;
 @modal-header-color:                #FFF;
+@modal-content-border-color:        rgba(0,0,0,0.2);
+
+// datepicker
+@datepicher-bg-color:               #32a7f3;
+@datepicher-font-color:             #FFF;
+@datepicher-td-border-color:        #e3e5e7;
+
+// dropdown
+@dropdown-hover-font-color:         #FFF;
+
+// page title
+@page-title-font-color:             #464646;
+@page-title-border-color:           #ddd;
+@page-title-bg-color:               #FFF;

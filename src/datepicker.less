@@ -7,18 +7,17 @@
     tr {
       &:first-child {
         height: 45px!important;
-        background: #32a7f3;
-        color: white;
+        background: @datepicher-bg-color;
+        color: @datepicher-font-color;
         font-size: 18px!important;
         button {
-          color: white!important;
+          color: @datepicher-font-color!important;
         }
       }
       &:last-child {
         height: 35px!important;
       }
     }
-
   }
   tbody{
     tr {
@@ -34,7 +33,7 @@
   td {
     min-width: 40px;
     min-height: 40px;
-    border: 1px solid #e3e5e7;
+    border: 1px solid @datepicher-td-border-color;
     border-collapse: collapse;
   }
 }

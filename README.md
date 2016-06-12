@@ -38,7 +38,7 @@
 </div>
 ```
 
-## 2. 按钮
+## 3. 按钮
 
 ### 1. 按钮样式
  
@@ -81,7 +81,7 @@
 <button type="button" class="btn bp-btn-primary btn-xs">（超小尺寸）Extra small button</button>
 ```
 
-## 3. 无标题容器 
+## 4. 无标题容器 
 
 - `bp-container`
 
@@ -93,7 +93,7 @@
 </div>
 ```
 
-## 4. 有标题容器 
+## 5. 有标题容器 
 
 - `panel`
 
@@ -117,9 +117,9 @@
 </div>
 ```
 
-- 按钮统一局右
+###2.  按钮统一局右
 
-## 5. 表格
+## 6. 表格
 
 - `table` `table-condensed` `table-bordered` `table-striped` `table-hover`
 
@@ -130,7 +130,7 @@
 </table>
 ```
 
-## 6. 表单
+## 7. 表单
 
 - `form-control` 边框色为**蓝色**
 - `required-star` 必填项提示**红***
@@ -154,7 +154,7 @@
 </div>
 ```    
 
-## 7. 弹窗
+## 8. 弹窗
 
 - `modal-dialog` 弹窗容器
 

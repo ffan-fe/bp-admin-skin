@@ -4,7 +4,7 @@
 
 [TOC]
 
-## 1. 页头（必须有）
+## 1. 页头 (必须有)
 
 - `page-title`
  
@@ -19,12 +19,31 @@
 </div>
 ```
 
+## 2. 内容的容器 `conter-wrapper`（必须）
+
+- 页头不放在内容容器内
+
+```
+// 页头 （必须）
+<div class="page-title">
+  <div class="title">
+    <h1>一方通行</h1>
+    <p class="subtitle">是个前所未有的萝莉控</p>
+  </div>
+</div>
+
+// 内容
+<div class="conter-wrapper">
+    // ...
+</div>
+```
+
 ## 2. 按钮
 
 ### 1. 按钮样式
  
  - `bp-btn-default` 默认样式（重置、取消...）
- - `bp-btn-primary` 确定、提交、查询...
+ - `bp-btn-primary` 确定、提交、查询、导出Excel...
  - `bp-btn-danger` 删除
  
 示例：
@@ -98,24 +117,7 @@
 </div>
 ```
 
-### 2. 按钮位置
-
-- 统一局右
-
-示例：
-
-```
-<div class="panel bp-panel-danger">
-  <div class="panel-heading">
-    <div class="panel-title">危险的Panel</div>
-  </div>
-  <div class="panel-body">123</div>
-  <div class="panel-footer">
-    <button type="button" class="btn bp-btn-default">（默认）default</button>
-    <button type="button" class="btn bp-btn-primary">（确定）primary</button>
-  </div>
-</div>
-```
+- 按钮统一局右
 
 ## 5. 表格
 
@@ -163,6 +165,7 @@
   <div class="modal-content">
     <div class="modal-header">
       <h3 class="modal-title">Modal Title</h3>
+      <div class="modal-close">X</div>
     </div>
     <div class="modal-body">
       <div> This is a modal body </div>

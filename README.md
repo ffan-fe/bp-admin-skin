@@ -4,7 +4,7 @@
 
 [TOC]
 
-## 1. 页头 
+## 1. 页头（必须有）
 
 - `page-title`
  
@@ -100,8 +100,7 @@
 
 ### 2. 按钮位置
 
-- 默认 局左
-- `panel-footer-btn-right` 局右
+- 统一局右
 
 示例：
 
@@ -111,7 +110,7 @@
     <div class="panel-title">危险的Panel</div>
   </div>
   <div class="panel-body">123</div>
-  <div class="panel-footer panel-footer-btn-right">
+  <div class="panel-footer">
     <button type="button" class="btn bp-btn-default">（默认）default</button>
     <button type="button" class="btn bp-btn-primary">（确定）primary</button>
   </div>

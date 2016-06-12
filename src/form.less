@@ -28,3 +28,19 @@ select.form-control{
     text-align: center;
   }
 }
+
+.nav-pills {
+  li {
+    a {
+      color: @primary-color;
+    }
+  }
+  li.active {
+    a {
+      background-color: @primary-color;
+      &:hover {
+        background-color: @btn-primary-hover-bg-color;
+      }
+    }
+  }
+}

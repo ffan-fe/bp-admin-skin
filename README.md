@@ -93,6 +93,18 @@
 </div>
 ```
 
+###1. 内容居中
+
+- `bp-container-center`
+
+示例：
+
+```
+<div class="bp-container bp-container-center">
+  <p>我是bp-container</p>
+</div>
+```
+
 ## 5. 有标题容器 
 
 - `panel`
@@ -135,6 +147,7 @@
 - `form-control` 边框色为**蓝色**
 - `required-star` 必填项提示**红***
 - `input-padding-left` 并排排列时，减小间距，去除padding-left
+- `label-margin-left` 有些特殊情况需要细微调整 `label` 的 margin-left（如 *demo.html* 的检索项优惠券有效期）
 
 示例：
 
@@ -164,7 +177,7 @@
 <div class="modal-dialog">
   <div class="modal-content">
     <div class="modal-header">
-      <h3 class="modal-title">Modal Title</h3>
+      <span class="modal-title">Modal Title</span>
       <div class="modal-close">X</div>
     </div>
     <div class="modal-body">

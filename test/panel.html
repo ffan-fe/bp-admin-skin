@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skin Panel</title>
+  <link rel="stylesheet" href="/css/theme.css">
+</head>
+<body>
+  <div class="app">
+    <header class="bp-header">
+      <div class="bp-header-logo">
+        <img src="http://img1.ffan.com/T158LTBgDT1RCvBVdK" />
+      </div>
+      <div class="bp-header-title">飞凡智慧生活O2O开放平台运营管理中心</div>
+    </header>
+    <div class="layout-page" style="top: 62px;">
+      <div class="layout-menu" style="background-color:#3A3A3A; width:250px; top: 62px; color: #fff;">menu</div>
+      <div class="layout-content">
+        <div class="page-title">
+          <div class="title">
+            <h1>Docs</h1>
+            <p class="subtitle">bp-panel</p>
+          </div>
+        </div>
+        <div class="conter-wrapper">
+          <div class="bp-container">
+            <h4>Panel</h4>
+            <div class="form-group" style="margin-top: 15px;">
+              <h5>通常的Panel举例</h5>
+              <div class="panel bp-panel-primary" style="border: 1px solid #ececec;">
+                <div class="panel-heading">
+                  <div class="panel-title">Panel 标题</div>
+                </div>
+                <div class="panel-body">
+                  <form>
+                    <div class="row">
+                      <div class="col-xs-3">
+                        <div class="form-group">
+                          <label>名称1</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-xs-3">
+                        <div class="form-group">
+                          <label>名称2</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-xs-3">
+                        <div class="form-group">
+                          <label>名称3</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-xs-3">
+                        <div class="form-group">
+                          <label>名称4</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="panel-footer">
+                  <button type="button" class="btn bp-btn-primary">确定</button>
+                  <button type="button" class="btn bp-btn-default">取消</button>
+                </div>
+              </div>
+              <div>
+                <pre>
+&lt;div class="panel bp-panel-primary"&gt;
+  &lt;div class="panel-heading"&gt;
+    &lt;div class="panel-title"&gt;Panel 标题&lt;/div&gt;
+  &lt;/div>
+  &lt;div class="panel-body"&gt;
+    &lt;form&gt;
+      &lt;div class="row"&gt;
+        &lt;div class="col-xs-3"&gt;
+          &lt;div class="form-group"&gt;
+            &lt;label&gt;名称1&lt;/label&gt;
+            &lt;input type="text" class="form-control" /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-xs-3"&gt; ... &lt;/div&gt;
+        &lt;div class="col-xs-3"&gt; ... &lt;/div&gt;
+        &lt;div class="col-xs-3"&gt; ... &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="row"&gt; ... &lt;/div&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+  &lt;div class="panel-footer"&gt;
+    &lt;button type="button" class="btn bp-btn-primary"&gt;确定&lt;/button&gt;
+    &lt;button type="button" class="btn bp-btn-default"&gt;取消&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+              </div>
+            </div>
+            <div class="form-group">
+              <h5>警告的Panel举例</h5>
+              <div class="panel bp-panel-danger" style="border: 1px solid #ececec;">
+                <div class="panel-heading">
+                  <div class="panel-title">Panel 标题</div>
+                </div>
+                <div class="panel-body">容器内容</div>
+                <div class="panel-footer">
+                  <button type="button" class="btn bp-btn-primary">确定</button>
+                  <button type="button" class="btn bp-btn-default">取消</button>
+                </div>
+              </div>
+              <div>
+                <pre>
+&lt;div class="panel bp-panel-danger" style="border: 1px solid #ececec;"&gt;
+  &lt;div class="panel-heading"&gt;
+    &lt;div class="panel-title"&gt;Panel 标题&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="panel-body"&gt;容器内容&lt;/div&gt;
+  &lt;div class="panel-footer"&gt;
+    &lt;button type="button" class="btn bp-btn-primary"&gt;确定&lt;/button&gt;
+    &lt;button type="button" class="btn bp-btn-default"&gt;取消&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+              </div>
+            </div>
+            <div class="form-group">
+              <h5>按钮居中的Panel举例</h5>
+              <div class="panel bp-panel-primary" style="border: 1px solid #ececec;">
+                <div class="panel-heading">
+                  <div class="panel-title">按钮居中标题</div>
+                </div>
+                <div class="panel-body">按钮居中</div>
+                <div class="panel-footer bp-panel-btn-center">
+                  <button type="button" class="btn bp-btn-primary">确定</button>
+                  <button type="button" class="btn bp-btn-default">取消</button>
+                </div>
+              </div>
+              <div>
+                <pre>
+&lt;div class="panel bp-panel-primary" style="border: 1px solid #ececec;"&gt;
+  &lt;div class="panel-heading"&gt;
+    &lt;div class="panel-title"&gt;按钮居中标题&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="panel-body"&gt;容器内容&lt;/div&gt;
+  &lt;div class="panel-footer bp-panel-btn-center"&gt;
+    &lt;button type="button" class="btn bp-btn-primary"&gt;确定&lt;/button&gt;
+    &lt;button type="button" class="btn bp-btn-default"&gt;取消&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+              </div>
+            </div>
+            <div class="form-group">
+              <h5>按钮局左的Panel举例</h5>
+              <div class="panel bp-panel-danger" style="border: 1px solid #ececec;">
+                <div class="panel-heading">
+                  <div class="panel-title">按钮局左标题</div>
+                </div>
+                <div class="panel-body">按钮局左</div>
+                <div class="panel-footer bp-panel-btn-left">
+                  <button type="button" class="btn bp-btn-primary">确定</button>
+                  <button type="button" class="btn bp-btn-default">取消</button>
+                </div>
+              </div>
+              <div>
+                <pre>
+&lt;div class="panel bp-panel-danger" style="border: 1px solid #ececec;"&gt;
+  &lt;div class="panel-heading"&gt;
+    &lt;div class="panel-title"&gt;按钮局左标题&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="panel-body"&gt;容器内容&lt;/div&gt;
+  &lt;div class="panel-footer bp-panel-btn-left"&gt;
+    &lt;button type="button" class="btn bp-btn-primary"&gt;确定&lt;/button&gt;
+    &lt;button type="button" class="btn bp-btn-default"&gt;取消&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

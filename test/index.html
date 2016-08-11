@@ -257,56 +257,202 @@
               </div>
             </div>
           </div>
-          <div class="bp-container">
-            <p>我是bp-container</p>
-            <form action="" class="form-horizontal">
-            	<div class="form-group">
-            		<label class="col-md-2 control-label" for="input">用户名：</label>
-            		<div class="col-lg-10">
-            			<input class="form-control" type="text" placeholder="请输入">
-            		</div>
-            	</div>
-            	<hr>
-            	<div class="form-group">
-            		<label class="col-md-2 control-label" for="input">密码：</label>
-            		<div class="col-lg-10">
-            			<input class="form-control" type="password">
-            		</div>
-            	</div>
-            	<hr>
-            	<div class="form-group">
-            		<label class="col-md-2 control-label" for="input">再次输入：</label>
-            		<div class="col-md-10">
-            			<input class="form-control" type="text" placeholder="请输入">
-            			<p class="help-block">这是一些提示信息</p>
-            		</div>
-            	</div>
-            	<hr>
-            	<div class="form-group">
-            		<label class="col-md-2 control-label" for="input">用户名：</label>
-            		<div class="col-lg-10">
-            			<input class="form-control underline" type="text" placeholder="请输入">
-            		</div>
-            	</div>
-            	<hr>
-            	<div class="form-group">
-            		<label class="col-md-2 control-label" for="input">禁用：</label>
-            		<div class="col-lg-10">
-            			<input class="form-control" type="text" placeholder="禁用项" disabled="">
-            		</div>
-            	</div>
-            	<hr>
-            	<div class="form-group">
-            		<label class="col-md-2 control-label" for="input">静态显示：</label>
-            		<div class="col-lg-10">
-            			<p class="form-control-static">email@example.com</p>
-            		</div>
-            	</div>
-            	<hr>
-            	</form>
-            </div>
-          
-          
+          <div class="panel bp-panel-primary">
+	          <div class="panel-heading">
+	          	<div class="panel-title">form组件</div>
+	          </div>
+	          <div class="panel-body">
+	            <form action="" class="form-horizontal">
+	            	<div class="form-group">
+	            		<label class="col-lg-2 control-label" for="input">用户名：</label>
+	            		<div class="col-lg-10">
+	            			<input class="form-control" type="text" placeholder="请输入">
+	            		</div>
+	            	</div>
+	            	<hr>
+	            	<div class="form-group">
+	            		<label class="col-lg-2 control-label" for="input">密码：</label>
+	            		<div class="col-lg-10">
+	            			<input class="form-control" type="password">
+	            		</div>
+	            	</div>
+	            	<hr>
+	            	<div class="form-group">
+	            		<label class="col-lg-2 control-label" for="input">再次输入：</label>
+	            		<div class="col-md-10">
+	            			<input class="form-control" type="text" placeholder="请输入">
+	            			<p class="help-block">这是一些提示信息</p>
+	            		</div>
+	            	</div>
+	            	<hr>
+	            	<div class="form-group">
+	            		<label class="col-lg-2 control-label" for="input">用户名：</label>
+	            		<div class="col-lg-10">
+	            			<input class="form-control underline" type="text" placeholder="请输入">
+	            		</div>
+	            	</div>
+	            	<hr>
+	            	<div class="form-group">
+	            		<label class="col-lg-2 control-label" for="input">禁用：</label>
+	            		<div class="col-lg-10">
+	            			<input class="form-control" type="text" placeholder="禁用项" disabled="">
+	            		</div>
+	            	</div>
+	            	<hr>
+	            	<div class="form-group">
+	            		<label class="col-lg-2 control-label" for="input">静态显示：</label>
+	            		<div class="col-lg-10">
+	            			<p class="form-control-static">email@example.com</p>
+	            		</div>
+	            	</div>
+	            	<hr>
+	            	<div class="row">
+	            		<label class="col-lg-2 control-label" for="input">Checkout and Radio：</label>
+	            		<div class="col-lg-10">
+	            			<div class="checkbox">
+	            				<label><input type="checkbox">这是一个可选的复选按钮</label>
+	            			</div>
+	            			<div class="checkbox">
+	            				<label><input type="checkbox" disabled>这是一个不可选的复选按钮</label>
+	            			</div>
+	            			<div class="radio">
+	            				<label><input type="radio">这是一个可选的单选按钮</label>
+	            			</div>
+	            			<div class="radio">
+	            				<label><input type="radio" disabled>这是一个不可选的单选按钮</label>
+	            			</div>
+	            		</div>
+	            	</div>
+	            	<hr>
+	            	<div class="row">
+	            		<label class="col-lg-2 control-label" for="input">Custom Checkboxes and Radio Buttons：</label>
+	            		<div class="col-lg-10">
+	            			<label class="checkbox1" for="Option"><input id="Option" type="checkbox"><span></span></label>
+	            		  <label class="radio1" for="Option1"> <input id="Option1" name="one" type="radio"> <span></span> </label>
+	            		  <label class="radio1" for="Option2"> <input id="Option2" name="one" type="radio"> <span></span> </label>
+	            		  <label class="radio1" for="Option3"> <input id="Option3" name="one" type="radio"> <span></span> </label>
+	            		</div>
+	            	</div>
+	            	<hr>
+	            	<div class="row">
+	            		<label class="col-lg-2 control-label" for="inputtext">Switch：</label>
+	            		<div class="col-lg-10">
+	            			<div class="onoffswitch">
+	            				<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch3" checked="">
+	            				<label class="onoffswitch-label" for="switch3">
+	            					<span class="onoffswitch-inner"></span>
+	            					<span class="onoffswitch-switch"></span>
+	            				</label>
+	            			</div>
+	            		</div>
+	            	</div>
+	            	<hr>
+	            	<div class="row">
+	            		<label class="col-lg-2 control-label" for="inputtext">Select：</label>
+	            		<div class="col-lg-10">
+	            			<select class="form-control">
+	            				<option value="1">1</option>
+	            				<option value="2">2</option>
+	            				<option value="3">3</option>
+	            				<option value="4">4</option>
+	            			</select>
+	            			<br>
+	            			<select class="form-control" multiple>
+	            			  <option value="1">1</option>
+	            				<option value="2">2</option>
+	            				<option value="3">3</option>
+	            				<option value="4">4</option>
+	            			</select>
+	            		</div>
+	            	</div>
+	            	<hr>
+	            	<div class="form-group">
+	            		<label class="col-lg-2 control-label" for="inputtext">Input with success：</label>
+	            		<div class="col-lg-10 has-success">
+	            			<input class="form-control" type="text">
+	            		</div>
+	            	</div>
+	            	<hr>
+	            	<div class="form-group">
+	            		<label class="col-lg-2 control-label" for="inputtext">Input with warning：</label>
+	            		<div class="col-lg-10 has-warning">
+	            			<input type="text" class="form-control">
+	            		</div>
+	            	</div>
+	            	<hr>
+	            	<div class="form-group">
+	            		<label class="col-lg-2 control-label" for="inputtext">Input with error：</label>
+	            		<div class="col-lg-10 has-error">
+	            			<input class="form-control" type="text">
+	            		</div>
+	            	</div>
+	            	<hr>
+	            	<div class="row">
+	            		<label class="col-lg-2 control-label" for="inputtext">Control Sizing：</label>
+	            		<div class="col-lg-10">
+	            			<input class="form-control input-lg" type="text" placeholder=".input-lg">
+	            			<br>
+	            			<input class="form-control" type="text" placeholder=".input-default">
+	            			<br>
+	            			<input class="form-control input-sm" type="text" placeholder=".input-sm">
+	            		</div>
+	            	</div>
+	            	<hr>
+	            	<div class="row">
+	            		<label class="col-lg-2 control-label" for="inputtext">Column Sizing：</label>
+	            		<div class="col-lg-2">
+	            			<input class="form-control" type="text" placeholder=".col-lg-2">
+	            		</div>
+	            		<div class="col-lg-3">
+	            			<input class="form-control" type="text" placeholder=".col-lg-3">
+	            		</div>
+	            		<div class="col-lg-4">
+	            			<input class="form-control" type="text" placeholder=".col-lg-4">
+	            		</div>
+	            	</div>
+	            	<hr>
+	            	<div class="form-group">
+	            		<label class="col-lg-2 control-label" for="inputtext">Input groups：</label>
+	            		<div class="col-lg-10">
+	            			<div class="input-group mb-10">
+		            			<span class="input-group-addon">@</span>
+		            			<input type="text" class="form-control" placeholder="Username">
+		            		</div>
+		            		<br>
+		            		<div class="input-group mb-10">
+		            			<input type="text" class="form-control">
+		            			<span class="input-group-addon">.00</span>
+		            		</div>
+		            		<br>
+		            		<div class="input-group mb-10">
+		            			<span class="input-group-addon">$</span>
+		            			<input type="text" class="form-control">
+		            			<span class="input-group-addon">.00</span>
+		            		</div>
+	            		</div>
+	            	</div>
+	            	<hr>
+	            	<div class="form-group">
+	            		<label class="col-lg-2 control-label" for="inputtext">Button addons：</label>
+	            		<div class=" col-lg-10">
+	            			<div class="input-group mb-10">
+	            				<span class="input-group-btn">
+	            					<button class="btn btn-default" type="button">Go!</button>
+	            				</span> 
+	            				<input type="text" class="form-control">
+	            			</div>
+	            			<br>
+	            			<div class="input-group">
+	            				<input type="text" class="form-control">
+	            				<span class="input-group-btn">
+	            					<button class="btn btn-default" type="button">Go!</button>
+	            				</span>
+	            			</div>
+	            		</div>
+	            	</div>
+	            </form>
+	          </div>
+          </div>
         </div>
       </div>
     </div>

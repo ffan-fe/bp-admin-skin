@@ -17,11 +17,14 @@ table.table-hover {
     li {
       a {
         color: @primary-color;
+        &:hover {
+          color: @table-page-font-color;
+        }
       }
       &.active {
         a {
-          background-color: @primary-color;
-          border-color: @primary-color;
+          background-color: @table-page-bg-color;
+          border-color: @table-page-border-color;
           color: @table-page-font-color;
         }
       }

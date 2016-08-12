@@ -2,51 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Skin Perview</title>
-  <link href="/css/theme.css" rel="stylesheet">
-  <style>
-    /**
-    * 按钮容器
-    */
-    .button-container {
-      padding-left: 10px;
-      background: #fff;
-    }
-    .button-container .btn {
-      margin: 10px 10px;
-    }
-    .dropdown-menu {
-      display: block;
-      position: relative;
-      float: none;
-      width: 160px;
-    }
-  </style>
+  <title>Skin Buttons</title>
+  <link rel="stylesheet" href="/css/theme.css">
 </head>
 <body>
   <div class="app">
-    <div class="layout-page" style="top: 0px;">
-      <div class="layout-menu" style="background-color:#3A3A3A; width:250px; top: 0px;">menu</div>
+    <header class="bp-header">
+      <div class="bp-header-logo">
+        <img src="http://img1.ffan.com/T158LTBgDT1RCvBVdK" alt="">
+      </div>
+      <div class="bp-header-title">飞凡智慧生活O2O开放平台运营管理中心</div>
+    </header>
+    <div class="layout-page" style="top: 62px;">
+      <div class="layout-menu" style="background-color:#3A3A3A; width:250px; top: 62px; color: #fff;">menu</div>
       <div class="layout-content">
         <div class="page-title">
           <div class="title">
-            <h1>一方通行</h1>
-            <p class="subtitle">是个前所未有的萝莉控</p>
+            <h1>Docs</h1>
+            <p class="subtitle">buttons</p>
           </div>
         </div>
         <div class="conter-wrapper">
           <div class="bp-container">
+            <h4>Buttons</h4>
             <div class="form-group">
               <span>实例:</span>
               <button type="button" class="btn bp-btn-default">（默认）default</button>
               <button type="button" class="btn bp-btn-primary">（确定）primary</button>
               <button type="button" class="btn bp-btn-danger">（删除）danger</button>
             </div>
+            <div>
+              <pre>
+&lt;button type="button" class="btn bp-btn-default"&gt;（默认）default&lt;/button&gt;
+&lt;button type="button" class="btn bp-btn-primary"&gt; (确定）primary&lt;/button&gt;
+&lt;button type="button" class="btn bp-btn-danger"&gt;（删除）danger&lt;/button&gt;</pre>
+            </div>
             <div class="form-group">
               <span>置灰:</span>
               <button type="button" class="btn bp-btn-default" disabled>（默认尺寸）Default button</button>
-              <button type="button" class="btn bp-btn-primary" disabled>（默认尺寸）Default button</button>
-              <button type="button" class="btn bp-btn-danger" disabled>（默认尺寸）Default button</button>       
+              <button type="button" class="btn bp-btn-primary" disabled>（默认尺寸）Primary button</button>
+              <button type="button" class="btn bp-btn-danger" disabled>（默认尺寸）Danger button</button> 
+            </div>
+            <div>
+              <pre>
+&lt;button type="button" class="btn bp-btn-default" disabled&gt;（默认尺寸）Default button&lt;/button&gt;
+&lt;button type="button" class="btn bp-btn-primary" disabled&gt;（默认尺寸）Primary button&lt;/button&gt;
+&lt;button type="button" class="btn bp-btn-danger" disabled&gt;（默认尺寸）Danger button&lt;/button&gt;</pre>
             </div>
             <div class="form-group">
               <span>尺寸:</span>
@@ -55,211 +56,16 @@
               <button type="button" class="btn bp-btn-primary btn-sm">（小按钮）Small button</button>
               <button type="button" class="btn bp-btn-primary btn-xs">（超小尺寸）Extra small button</button>
             </div>
-          </div>
-          <div class="bp-container bp-container-center">
-            <p>我是 bp-container &&  bp-container-center</p>
-          </div>
-          <div class="bp-container">
-            <p>我是bp-container</p>
-            <form action="" class="form-horizontal">
-              <div class="form-group">
-                <label class="control-label"><span class="required-star">*</span>龙破斩的咒文:</label>
-                <input type="text" class="form-control" placeholder="请输入" />
-              </div>
-              <div class="form-group">
-                <div class="col-md-4">
-                  <label class="col-md-4 control-label">优惠券ID:</label>
-                  <div class="col-md-8 input-padding-left">
-                    <input type="text" class="form-control" placeholder="请输入优惠券ID" />
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <label class="col-md-4 control-label">优惠券ID:</label>
-                  <div class="col-md-8 input-padding-left">
-                    <input type="text" class="form-control" placeholder="请输入优惠券ID" />
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <label class="col-md-4 control-label">优惠券ID:</label>
-                  <div class="col-md-8 input-padding-left">
-                    <input type="text" class="form-control" placeholder="请输入优惠券ID" />
-                  </div>
-                </div>
-              </div>
-              
-              <!--复选框按钮为绿色，约定太多，请勿使用，不慎使用，不喜勿喷 ^v^ ~~-->
-              <!--<div class="form-group">
-                <div class="col-ms-10 radio">
-                  <label for="radio1">
-                    <input type="radio" id="radio1" name="bp-radio" class="bp-radio">
-                    <span class="bp-radio-span"></span>
-                    Option one is this and that&mdash;be sure to include why it's great
-                  </label>
-                </div>
-                <div class="col-ms-10 radio">
-                  <label for="radio2">
-                    <input type="radio" id="radio2" name="bp-radio" class="bp-radio">
-                    <span class="bp-radio-span"></span>
-                    Option one is this and that&mdash;be sure to include why it's great
-                  </label>
-                </div>
-                <div class="col-ms-10 radio">
-                  <label for="radio3">
-                    <input type="radio" id="radio3" name="bp-radio" class="bp-radio">
-                    <span class="bp-radio-span"></span>
-                    Option one is this and that&mdash;be sure to include why it's great
-                  </label>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-1"><span class="required-star">*</span>radio:</label>
-                <div class="col-ms-10 radio">
-                  <label for="radio4">
-                    <input type="radio" id="radio4" name="bp-radio1" class="bp-radio">
-                    <span class="bp-radio-span"></span>
-                    Option one
-                  </label>
-                  <label for="radio5">
-                    <input type="radio" id="radio5" name="bp-radio1" class="bp-radio">
-                    <span class="bp-radio-span"></span>
-                    Option two
-                  </label>
-                  <label for="radio6">
-                    <input type="radio" id="radio6" name="bp-radio1" class="bp-radio">
-                    <span class="bp-radio-span"></span>
-                    Option three
-                  </label>
-                </div>
-              </div>-->
-              <div class="form-group">
-                <label for="control-label"><span class="required-star">*</span>Dropdown:</label>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                </ul>
-              </div>
-              <div class="form-group">
-                <label for="control-label">Select:</label>
-                <select multiple class="form-control">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="control-label">Nav:</label>
-                <ul class="nav nav-pills">
-                  <li role="presentation" class="active"><a ng-href="index.html#/discount/add">活动信息</a></li>
-                  <li ><a href="javascript:;" ng-disadled="true">活动规则</a></li>
-                  <li ><a href="javascript:;" ng-disadled="true">预算控制</a></li>
-                </ul>
-              </div>
-            </form>
-          </div>
-          <div class="panel bp-panel-primary">
-            <div class="panel-heading">
-              <div class="panel-title">通常的Panel</div>
-            </div>
-            <div class="panel-body">123</div>
-            <div class="panel-footer">
-              <button type="button" class="btn bp-btn-default">（默认）default</button>
-              <button type="button" class="btn bp-btn-primary">（确定）primary</button>
-            </div>
-          </div>
-          <div class="panel bp-panel-danger">
-            <div class="panel-heading">
-              <div class="panel-title">危险的Panel</div>
-            </div>
-            <div class="panel-body">123</div>
-            <div class="panel-footer">
-              <button type="button" class="btn bp-btn-default">（默认）default</button>
-              <button type="button" class="btn bp-btn-primary">（确定）primary</button>
-            </div>
-          </div>
-          <div class="panel bp-panel-primary">
-            <div class="panel-heading">
-              <div class="panel-title">Condensed, Bordered, Striped Table</div>
-            </div>
-            <div class="panel-body">
-              <table class="table table-condensed table-bordered table-striped table-hover">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Address</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>John</td>
-                    <td>john@gmail.com</td>
-                    <td>London, UK</td>
-                  </tr>
-                  <tr>
-                    <td>Andy</td>
-                    <td>andygmail.com</td>
-                    <td>Merseyside, UK</td>
-                  </tr>
-                  <tr>
-                    <td>姓名</td>
-                    <td>邮箱</td>
-                    <td>地址</td>
-                  </tr>
-                  <tr>
-                    <td>John</td>
-                    <td>john@gmail.com</td>
-                    <td>London, UK</td>
-                  </tr>
-                  <tr>
-                    <td>Andy</td>
-                    <td>andygmail.com</td>
-                    <td>Merseyside, UK</td>
-                  </tr>
-                  <tr>
-                    <td>Frank</td>
-                    <td>frank@gmail.com</td>
-                    <td>Southampton, UK</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <span class="modal-title">Modal Title</span>
-                <div class="modal-close">X</div>
-              </div>
-              <div class="modal-body">
-                <div> This is a modal body </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn bp-btn-default">（默认）default</button>
-                <button type="button" class="btn bp-btn-primary">（确定）primary</button>
-              </div>
-            </div>
-          </div>
-          <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-              <div class="modal-header">
-                <span class="modal-title">弹窗啊都是弹</span>
-                <div class="modal-close">X</div>
-              </div>
-              <div class="modal-body">
-                <div> This is a modal body </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn bp-btn-primary">（确定）primary</button>
-              </div>
-            </div>
+            <div>
+              <pre>
+&lt;button type="button" class="btn bp-btn-primary btn-lg"&gt;（大按钮）Large button&lt;/button&gt;
+&lt;button type="button" class="btn bp-btn-primary"&gt;（默认尺寸）Default button&lt;/button&gt;
+&lt;button type="button" class="btn bp-btn-primary btn-sm"&gt;（小按钮）Small button&lt;/button&gt;
+&lt;button type="button" class="btn bp-btn-primary btn-xs"&gt;（超小尺寸）Extra small button&lt;/button&gt;</pre>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div>  
 </body>
 </html>

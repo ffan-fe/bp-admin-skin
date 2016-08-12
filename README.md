@@ -114,7 +114,7 @@
 - `bp-panel-primary` 标题背景色为**蓝色**的容器
 - `bp-panel-danger` 标题背景色为**红色**的容器
 
-示例：
+**蓝色**示例：
 
 ```
 <div class="panel bp-panel-primary">
@@ -123,13 +123,62 @@
   </div>
   <div class="panel-body">123</div>
   <div class="panel-footer">
-    <button type="button" class="btn bp-btn-default">（默认）default</button>
     <button type="button" class="btn bp-btn-primary">（确定）primary</button>
+    <button type="button" class="btn bp-btn-default">（默认）default</button>
   </div>
 </div>
 ```
 
-###2.  按钮统一局右
+**红色**示例：
+
+```
+<div class="panel bp-panel-danger">
+  <div class="panel-heading">
+    <div class="panel-title">通常的Panel</div>
+  </div>
+  <div class="panel-body">123</div>
+  <div class="panel-footer">
+    <button type="button" class="btn bp-btn-primary">（确定）primary</button>
+    <button type="button" class="btn bp-btn-default">（默认）default</button>
+  </div>
+</div>
+```
+
+###2.  按钮位置
+
+- 按钮默认局右
+- `bp-panel-btn-center` 按钮居中
+- `bp-panel-btn-left` 按钮局左
+
+按钮居中示例：
+
+```
+<div class="panel bp-panel-primary">
+  <div class="panel-heading">
+    <div class="panel-title">通常的Panel</div>
+  </div>
+  <div class="panel-body">按钮居中</div>
+  <div class="panel-footer bp-panel-btn-center">
+    <button type="button" class="btn bp-btn-primary">（确定）primary</button>
+    <button type="button" class="btn bp-btn-default">（默认）default</button>
+  </div>
+</div>
+```
+
+按钮局左示例：
+
+```
+<div class="panel bp-panel-danger">
+  <div class="panel-heading">
+    <div class="panel-title">警告的Panel</div>
+  </div>
+  <div class="panel-body">按钮局左</div>
+  <div class="panel-footer bp-panel-btn-left">
+    <button type="button" class="btn bp-btn-primary">（确定）primary</button>
+    <button type="button" class="btn bp-btn-default">（默认）default</button>
+  </div>
+</div>
+```
 
 ## 6. 表格
 

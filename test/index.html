@@ -25,8 +25,14 @@
 </head>
 <body>
   <div class="app">
-    <div class="layout-page" style="top: 0px;">
-      <div class="layout-menu" style="background-color:#3A3A3A; width:250px; top: 0px;">menu</div>
+    <header class="bp-header">
+      <div class="bp-header-logo">
+        <img src="http://img1.ffan.com/T158LTBgDT1RCvBVdK" alt="">
+      </div>
+      <div class="bp-header-title">飞凡智慧生活O2O开放平台运营管理中心</div>
+    </header>
+    <div class="layout-page" style="top: 62px;">
+      <div class="layout-menu" style="background-color:#3A3A3A; width:250px; top: 62px; color: #fff;">menu</div>
       <div class="layout-content">
         <div class="page-title">
           <div class="title">
@@ -166,8 +172,28 @@
             </div>
             <div class="panel-body">123</div>
             <div class="panel-footer">
-              <button type="button" class="btn bp-btn-default">（默认）default</button>
               <button type="button" class="btn bp-btn-primary">（确定）primary</button>
+              <button type="button" class="btn bp-btn-default">（默认）default</button>
+            </div>
+          </div>
+          <div class="panel bp-panel-primary">
+            <div class="panel-heading">
+              <div class="panel-title">通常的Panel</div>
+            </div>
+            <div class="panel-body">123</div>
+            <div class="panel-footer bp-panel-btn-center">
+              <button type="button" class="btn bp-btn-primary">（确定）primary</button>
+              <button type="button" class="btn bp-btn-default">（默认）default</button>
+            </div>
+          </div>
+          <div class="panel bp-panel-primary">
+            <div class="panel-heading">
+              <div class="panel-title">通常的Panel</div>
+            </div>
+            <div class="panel-body">123</div>
+            <div class="panel-footer bp-panel-btn-left">
+              <button type="button" class="btn bp-btn-primary">（确定）primary</button>
+              <button type="button" class="btn bp-btn-default">（默认）default</button>
             </div>
           </div>
           <div class="panel bp-panel-danger">
@@ -176,8 +202,8 @@
             </div>
             <div class="panel-body">123</div>
             <div class="panel-footer">
-              <button type="button" class="btn bp-btn-default">（默认）default</button>
               <button type="button" class="btn bp-btn-primary">（确定）primary</button>
+              <button type="button" class="btn bp-btn-default">（默认）default</button>
             </div>
           </div>
           <div class="panel bp-panel-primary">
@@ -228,7 +254,7 @@
               </table>
             </div>
           </div>
-					<div class="panel bp-panel-primary">
+          <div class="panel bp-panel-primary">
             <div class="panel-heading">
               <div class="panel-title">default Progressbars</div>
             </div>
@@ -270,7 +296,7 @@
             	</div>
             </div>
           </div>
-					<div class="panel bp-panel-primary">
+          <div class="panel bp-panel-primary">
             <div class="panel-heading">
               <div class="panel-title">Animated Progresbars</div>
             </div>
@@ -346,7 +372,7 @@
             	</div>
             </div>
           </div>
-					<div class="modal-dialog">
+          <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
                 <span class="modal-title">Modal Title</span>
@@ -375,7 +401,54 @@
               </div>
             </div>
           </div>
-
+          <div class="bp-container">
+            <p>我是bp-container</p>
+            <form action="" class="form-horizontal">
+            	<div class="form-group">
+            		<label class="col-md-2 control-label" for="input">用户名：</label>
+            		<div class="col-lg-10">
+            			<input class="form-control" type="text" placeholder="请输入">
+            		</div>
+            	</div>
+            	<hr>
+            	<div class="form-group">
+            		<label class="col-md-2 control-label" for="input">密码：</label>
+            		<div class="col-lg-10">
+            			<input class="form-control" type="password">
+            		</div>
+            	</div>
+            	<hr>
+            	<div class="form-group">
+            		<label class="col-md-2 control-label" for="input">再次输入：</label>
+            		<div class="col-md-10">
+            			<input class="form-control" type="text" placeholder="请输入">
+            			<p class="help-block">这是一些提示信息</p>
+            		</div>
+            	</div>
+            	<hr>
+            	<div class="form-group">
+            		<label class="col-md-2 control-label" for="input">用户名：</label>
+            		<div class="col-lg-10">
+            			<input class="form-control underline" type="text" placeholder="请输入">
+            		</div>
+            	</div>
+            	<hr>
+            	<div class="form-group">
+            		<label class="col-md-2 control-label" for="input">禁用：</label>
+            		<div class="col-lg-10">
+            			<input class="form-control" type="text" placeholder="禁用项" disabled="">
+            		</div>
+            	</div>
+            	<hr>
+            	<div class="form-group">
+            		<label class="col-md-2 control-label" for="input">静态显示：</label>
+            		<div class="col-lg-10">
+            			<p class="form-control-static">email@example.com</p>
+            		</div>
+            	</div>
+            	<hr>
+            	</form>
+            </div>
         </div>
       </div>
     </div>

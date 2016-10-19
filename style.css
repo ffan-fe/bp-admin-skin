@@ -1,0 +1,332 @@
+html, body {
+    font-family: 'PingFang SC', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+    background-color: rgb(0, 14, 39);
+    overflow: hidden;
+}
+
+#wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 14, 39);
+    background-image: url("./images/texture.png");
+    transition: background-color 1s ease-in;
+}
+
+#main-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+/*法阵*/
+#bg_magic_circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.05;
+    background: url("./images/bg-img.png") center center fixed no-repeat;
+    transition: opacity 1s ease-in;
+}
+
+@media (max-width: 770px) {
+    body {
+        height: 100%;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #wrap {
+        position: static;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 14, 39);
+        background-image: url("./images/texture.png");
+        transition: background-color 1s ease-in;
+    }
+
+    #main-container {
+        position: static;
+        width: 100%;
+        height: auto;
+        overflow: auto;
+    }
+}
+
+@media screen {
+    #skin_space {
+        left: 0px;
+    }
+    #skin_space .logo {
+        left: 50%;
+        top: 200px;
+        width: 240px;
+        height: 240px;
+        margin-left: -120px;
+        padding-top: 250px;
+        background: url(images/sun.png) no-repeat;
+    }
+    #component_space {
+        right: 0px;
+    }
+    #component_space .logo {
+        left: 50%;
+        top: 250px;
+        width: 194px;
+        height: 194px;
+        margin-left: -92px;
+        padding-top: 204px;
+        background: url(images/moon.png) no-repeat;
+    }
+    .index-space {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        border: 0px solid #000;
+        background: rgba(0, 0, 0, 0);
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .index-space:before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 100%;
+        background-color: rgba(0, 11, 27, 0.22);
+        content: "";
+        cursor: pointer;
+        transition: transform 500ms ease-out;
+        transform: scale(0);
+    }
+    .index-space:hover:before {
+        transform: scale(2);
+    }
+    .index-space:hover .logo {
+        opacity: 1;
+    }
+    .index-space .logo {
+        position: absolute;
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        opacity: 0.4;
+        transition: opacity 200ms linear;
+    }
+    .index-space a {
+        display: block;
+        height: 100%;
+    }
+}
+@media (max-width: 770px) {
+    .index-space {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+    }
+    .index-space .logo {
+        opacity: 1;
+    }
+    #skin_space .logo {
+        left: 50%;
+        top: 50%;
+        width: 240px;
+        height: 240px;
+        margin-left: -120px;
+        margin-top: -120px;
+        background: url(images/sun.png) no-repeat;
+    }
+    #component_space {
+        top: 50%;
+    }
+    #component_space .logo {
+        left: 50%;
+        top: 50%;
+        width: 194px;
+        height: 194px;
+        margin-left: -92px;
+        margin-top: -92px;
+        background: url(images/moon.png) no-repeat;
+    }
+}
+@media (max-width: 320px) {
+    #skin_space .logo {
+        width: 160px;
+        height: 160px;
+        padding-top: 160px;
+        margin-top: -80px;
+        margin-left: -80px;
+        background-size: cover;
+    }
+    #component_space .logo {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding-top: 67%;
+        background-size: 140px 140px;
+        background-position: 50%;
+    }
+}
+
+
+
+@media screen {
+    #nav {
+        position: fixed;
+        top: 50px;
+        right: 50px;
+        width: 120px;
+        padding-top: 56px;
+        overflow: hidden;
+        transition: height 200ms linear;
+    }
+    #nav #nav-list .nav-item {
+        position: relative;
+        height: 40px;
+        max-width: 120px;
+        line-height: 40px;
+        padding-right: 8px;
+        background-color: rgba(0, 0, 0, 0);
+        overflow: hidden;
+        cursor: pointer;
+        text-align: right;
+        transition: background-color 300ms linear;
+    }
+    #nav #nav-list .nav-item:hover,
+    #nav #nav-list .nav-item.active {
+        background-color: #6d7db1;
+    }
+    #nav #nav-list .nav-item a {
+        display: block;
+        height: 100%;
+        color: white;
+        z-index: 1;
+    }
+    #nav #nav-list .nav-item a:hover {
+        text-decoration: none;
+    }
+    #nav .skin-aside-menu,
+    #nav .components-aside-menu {
+        width: 120px;
+        text-align: right;
+    }
+    #nav .skin-aside-menu .menu-item,
+    #nav .components-aside-menu .menu-item {
+        padding: 0px 8px 0px 8px;
+    }
+    #nav .skin-aside-menu .menu-item a,
+    #nav .components-aside-menu .menu-item a {
+        color: #666666;
+        transition: color 200ms ease-in;
+    }
+    #nav .skin-aside-menu .menu-item a:hover,
+    #nav .components-aside-menu .menu-item a:hover {
+        color: white;
+        text-decoration: none;
+    }
+    #nav .skin-aside-menu .menu-item .title,
+    #nav .components-aside-menu .menu-item .title {
+        margin-top: 8px;
+        color: #7d5523;
+        font-weight: bold;
+    }
+    #nav #toggle_btn {
+        display: none;
+        position: relative;
+        float: right;
+        top: 10px;
+        color: white;
+    }
+    .skin-wrap #nav {
+        background: url("images/sun_s.png") top right no-repeat;
+    }
+    .ui-wrap #nav {
+        background: url("images/moon_s.png") top right no-repeat;
+    }
+}
+@media (max-width: 770px) {
+    #nav {
+        position: static;
+        width: 100%;
+        height: 56px;
+        padding: 8px;
+        z-index: 1;
+    }
+    #nav #nav-list {
+        display: inline-block;
+    }
+    #nav #nav-list .nav-item {
+        display: inline-block;
+        overflow: inherit;
+        padding: 0px 8px;
+    }
+    #nav #toggle_btn {
+        display: block;
+    }
+    #nav.show-skin-menu,
+    #nav.show-component-menu {
+        height: 290px;
+    }
+    #nav .skin-aside-menu,
+    #nav .components-aside-menu {
+        padding-left: 7px;
+        text-align: left;
+        color: white;
+    }
+    #nav .skin-aside-menu .menu-item,
+    #nav .components-aside-menu .menu-item {
+        padding: 0px;
+    }
+    #nav .skin-aside-menu .menu-item a,
+    #nav .components-aside-menu .menu-item a {
+        color: white;
+    }
+    #nav .skin-aside-menu .aside-menu-title,
+    #nav .components-aside-menu .aside-menu-title {
+        display: none;
+    }
+    .skin-wrap #nav {
+        background: #ffab42;
+    }
+    .ui-wrap #nav {
+        background: #190d46;
+    }
+}
+
+@media screen {
+    #wrap.skin-wrap {
+        background-color: #ffab42;
+    }
+    #wrap.skin-wrap .content-container {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        right: 180px;
+        padding: 36px;
+        padding-top: 0px;
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 0.8);
+        overflow: auto;
+    }
+    .skin-wrap #bg_magic_circle {
+        opacity: 0.3;
+    }
+}
+@media (max-width: 770px) {
+    #wrap.skin-wrap .content-container {
+        position: static;
+        width: 100%;
+        border-radius: 0px;
+    }
+}
+
+
+

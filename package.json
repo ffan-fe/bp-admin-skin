@@ -1,6 +1,6 @@
 {
   "name": "bp-admin-skin",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "bp admin project ui skin",
   "main": "bin/css/theme.css",
   "scripts": {
@@ -14,7 +14,7 @@
   "author": "fengpeng",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^3.3.6",
+    "ffan-bootstrap": "latest",
     "less": "^2.6.1",
     "gulp": "^3.9.0",
     "gulp-less": "^3.1.0",

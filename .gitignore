@@ -31,6 +31,6 @@ templates.js
 
 dist
 
-bin/css/
+#bin/css/
 
 
